@@ -2,7 +2,7 @@
 
 (function() {
 
-  class KeyLogger extends HTMLElement {
+  class WrapperDiv extends HTMLElement {
     constructor() {
       // Must always call super
       super()
@@ -19,10 +19,10 @@
 
       setInterval(() => {
         console.log(str)
-        str = ""
-      }, 2000)
+        // str = ""
+      }, 7000)
     }
   }
 
-  customElements.define('key-logger', KeyLogger)
+  customElements.define('wrapper-div', WrapperDiv)
 }())
