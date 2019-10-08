@@ -18,9 +18,15 @@
       }
 
       setInterval(() => {
-        console.log(str)
+        // console.log(str)
+        window.localStorage.setItem("key-stroke-log", str)
         // str = ""
-      }, 7000)
+      }, 3000)
+
+      setInterval(() => {
+        let value = window.localStorage.getItem("key-stroke-log")
+        console.log(value)
+      }, 9000)
     }
   }
 
