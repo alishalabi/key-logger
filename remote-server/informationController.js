@@ -21,6 +21,7 @@ exports.index = function (req, res) {
 // Handle create information actions
 exports.new = function (req, res) {
   var information = new Information();
+  console.log(req.body)
   information.package = req.body.package;
 // save the contact and check for errors
   information.save(function (err) {
